@@ -1,0 +1,41 @@
+package Aplicacao;
+
+import java.util.Scanner;
+
+import Entidade.Cachorro;
+import Entidade.Cavalo;
+import Entidade.Preguica;
+
+public class Principal {
+	public static void main(String[] args)
+	{
+		Scanner kb= new Scanner (System.in);
+		
+		Cachorro dog = new Cachorro("Babi", 12,"uauuau", "vruuumm");
+		Cavalo pocoto = new Cavalo("BoJack Horseman", 8, "ihuuuhuuu", "trota");
+		Preguica preg = new Preguica("Guiça", 9, "iiiiiiiiih","sobe em árvores"); // (String nome, int idade, String som, String subirArvores)		
+		
+		System.out.println("MEUS PETS");
+		System.out.println("Vos lhe apresento: "+dog.getNome());
+		System.out.println(""+dog.getNome()+" Tem "+dog.getIdade()+" Anos");
+		System.out.println("Late "+dog.getNome()+ ": "+dog.getSom());
+		System.out.println(""+dog.getNome()+" Corre: "+dog.getCorrer());
+		
+		System.out.println("");
+		
+		System.out.println("Depois temos: "+pocoto.getNome());
+		System.out.println(""+pocoto.getNome()+ " Tem "+pocoto.getIdade()+" Anos");
+		System.out.println("Relincha "+pocoto.getNome()+": "+pocoto.getSom());
+		System.out.println(""+pocoto.getNome()+" quando está assustado ele: "+pocoto.getCorrer());
+		
+		System.out.println("");
+		
+		// "Pregi", 9, "iiiiiiiiih","sobe em árvores" (String nome, int idade, String som, String subirArvores)		
+		
+		System.out.println("Meu terceiro pet: "+preg.getNome()); 
+		System.out.println(""+preg.getNome()+ " Tem "+preg.getIdade()+" Anos");
+		System.out.println(""+preg.getNome()+" que barulho você faz? "+preg.getSom());
+		System.out.println(""+preg.getNome()+" quando assustada, ela: "+preg.getSubirArvores());
+	}
+
+}
